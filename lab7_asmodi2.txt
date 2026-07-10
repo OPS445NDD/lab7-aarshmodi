@@ -1,0 +1,10 @@
+OPS445 Lab Report - System Information for running ./CheckLab7.py
+=================================================================
+    User login name: asmodi2
+    Linux system name: asmodi2ops445
+    Python executable: /usr/bin/python3
+    Python version: 31012
+    OS Platform: linux
+    Working Directory: /home/asmodi2/ops445/lab7-aarshmodi
+    Start at: Fri Jul 10 02:13:16 2026
+=================================================================
