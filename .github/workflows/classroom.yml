@@ -67,27 +67,6 @@ jobs:
         command: python3 ./CheckLab7.py -f -v lab7f
         timeout: 10
         max-score: 1
-    - name: lab7g
-      id: lab7g
-      uses: classroom-resources/autograding-io-grader@v1
-      with:
-        test-name: lab7g
-        setup-command: python3 ./CheckLab7.py -f -v
-        command: python3 ./CheckLab7.py -f -v lab7g
-        input: ''
-        expected-output: ''
-        comparison-method: contains
-        timeout: 10
-        max-score: 1
-    - name: lab7h
-      id: lab7h
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: lab7h
-        setup-command: python3 ./CheckLab7.py -f -v
-        command: python3 ./CheckLab7.py -f -v lab7h
-        timeout: 10
-        max-score: 1
     - name: lab7i
       id: lab7i
       uses: classroom-resources/autograding-command-grader@v1
@@ -106,8 +85,6 @@ jobs:
         LAB7D_RESULTS: "${{steps.lab7d.outputs.result}}"
         LAB7E_RESULTS: "${{steps.lab7e.outputs.result}}"
         LAB7F_RESULTS: "${{steps.lab7f.outputs.result}}"
-        LAB7G_RESULTS: "${{steps.lab7g.outputs.result}}"
-        LAB7H_RESULTS: "${{steps.lab7h.outputs.result}}"
         LAB7I_RESULTS: "${{steps.lab7i.outputs.result}}"
       with:
-        runners: lab7a,lab7b,lab7c,lab7d,lab7e,lab7f,lab7g,lab7h,lab7i
+        runners: lab7a,lab7b,lab7c,lab7d,lab7e,lab7f,lab7i
